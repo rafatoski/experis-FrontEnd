@@ -22,31 +22,29 @@ get_template_part('parts/header');
 
             <div class="row align-items-md-stretch">
                 <div class="col-md-6">
-                    <div class="h-100 p-5 text-bg-dark rounded-3" style="background-image:<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'large')); ?>">
-                        <h2>Change the background</h2>
-                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                        <button class="btn btn-outline-light" type="button">Example button</button>
-                    </div>
+                    <div class="h-100 p-5 text-bg-dark rounded-3"   style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'large')); ?>');">
+                        <div class="product-image my-4">
+                            <i class="bi bi-stars fs-4"></i>
+                        </div>
+                        <h2><?php the_title(); ?></h2>
+                        <p><?php echo wp_trim_words(get_the_excerpt(), 10, '...'); ?></p>                        
+                        </div>
                 </div>
                 <div class="col-md-6">
                     <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                        <h2>Add borders</h2>
-                        <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                        <h2>Video:</h2>
+                        
+                        <?php if ($enlace_youtube): ?>
+                            <div class="product-video">
+                                <h2>Video:</h2>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo esc_attr($enlace_youtube); ?>" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
+ 
 
-            <?php if ($background_image): ?>
-                <div class="product-image my-4" style="background-image: url('<?php echo esc_url($background_image); ?>');"></div>
-            <?php endif; ?>
-
-            <?php if ($enlace_youtube): ?>
-                <div class="product-video">
-                    <h2>Video:</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo esc_attr($enlace_youtube); ?>" frameborder="0" allowfullscreen></iframe>
-                </div>
-            <?php endif; ?>
             
         <?php
             endwhile;

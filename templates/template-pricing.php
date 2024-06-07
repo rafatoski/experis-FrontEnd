@@ -7,7 +7,7 @@
 
 $prices = load_prices_from_json();
 ?>
- <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+ <div class="row row-cols-1 row-cols-md-3 mb-3 text-center  align-items-md-stretch">
     <div class="col">
         <div class="card mb-4 rounded-3 ">
             <div class="card-header py-3 bg-light">
