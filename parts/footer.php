@@ -1,6 +1,6 @@
 <div class="container">
 
-<div class="container-fluid bg-light">
+<div class="container-fluid bg-light rounded-3 p-3">
     <?php echo do_shortcode('[activecampaign form=1 css=1]'); ?>
 </div>
         <footer class="py-3 my-4">

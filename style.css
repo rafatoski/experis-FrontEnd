@@ -51,4 +51,10 @@ body {
 .card-cover{
     background-size: cover;
     background-blend-mode: overlay;
+    opacity: .9;
+    transition: all .3s ease;
+}
+
+.card-cover:hover{
+    opacity: 1;
 }
