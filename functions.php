@@ -1,4 +1,6 @@
 <?php
+add_theme_support('post-thumbnails');
+
 function load_prices_from_json() {
     // Ruta al archivo JSON
     $json_file = get_stylesheet_directory() . '/assets/js/prices.json';

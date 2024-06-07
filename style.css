@@ -10,7 +10,7 @@ License URI: URL_de_la_licencia
 Tags: bootstrap, one single page, gutember, stripe, javascript
 */
 
-/* Variables */
+/* Custom Brand Colors and styles  */
 :root {
     --color-blanco: #ffffff;
     --color-negro: #000000;
@@ -22,7 +22,7 @@ Tags: bootstrap, one single page, gutember, stripe, javascript
     --espacio: 20px;
 }
 
-/* Estilos Generales */
+/* Basic Reset */
 body {
     font-family: system-ui, -apple-system, 'Inter', sans-serif;
     font-size: var(--font-size-body);
@@ -34,4 +34,21 @@ body {
     padding: var(--espacio);
 }
 
-/* Resto de tus estilos */
+/* some custom styles just to add better UX */
+
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+  }
+  
+  .feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+.card-cover{
+    background-size: cover;
+    background-blend-mode: overlay;
+}
