@@ -1,0 +1,37 @@
+/*
+Theme Name: experis theme
+Theme URI: 
+Description: Esta es una prueba técnica para aplicar al trabajo de front-end.
+Author: Rafael Castillo
+Author URI: #
+Version: 1.0
+License: Licencia_del_tema
+License URI: URL_de_la_licencia
+Tags: bootstrap, one single page, gutember, stripe, javascript
+*/
+
+/* Variables */
+:root {
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-azul: #007bff;
+    --font-size-body: 16px;
+    --font-size-titulo: 32px;
+    --font-size-heading: 45px;
+    --border-radius: 1rem; /* 16px */
+    --espacio: 20px;
+}
+
+/* Estilos Generales */
+body {
+    font-family: system-ui, -apple-system, 'Inter', sans-serif;
+    font-size: var(--font-size-body);
+    color: var(--color-negro);
+}
+
+.card {
+    border-radius: var(--border-radius);
+    padding: var(--espacio);
+}
+
+/* Resto de tus estilos */
